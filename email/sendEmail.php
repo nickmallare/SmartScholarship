@@ -10,7 +10,8 @@ $sendEmail->addContent("text/plain", "$message");
 $sendEmail->addContent(
     "text/html", "<strong>$message</strong>"
 );
-$sendgrid = new \SendGrid('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');
+//key goes here
+$sendgrid = new \SendGrid('');
 try {
     $response = $sendgrid->send($sendEmail);
   
